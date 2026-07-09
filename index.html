@@ -58,7 +58,7 @@
                         <p>Estrategia digital y gestión remota con reportes en tiempo real.</p>
                         <div class="card-footer">
                             <span class="price">$500<span>/mes</span></span>
-                            <button class="btn-card">Contratar</button>
+                            <button class="btn-card" data-id="1" data-name="Consultoría Virtual" data-price="500">Contratar</button>
                         </div>
                     </article>
 
@@ -68,7 +68,7 @@
                         <p>Mantenimiento presencial de infraestructura con técnicos certificados.</p>
                         <div class="card-footer">
                             <span class="price">$800<span>/visita</span></span>
-                            <button class="btn-card">Contratar</button>
+                            <button class="btn-card" data-id="2" data-name="Soporte Físico" data-price="800">Contratar</button>
                         </div>
                     </article>
 
@@ -78,7 +78,7 @@
                         <p>El balance perfecto entre soporte en sitio y optimización en la nube.</p>
                         <div class="card-footer">
                             <span class="price">$1200<span>/mes</span></span>
-                            <button class="btn-card">Contratar</button>
+                            <button class="btn-card" data-id="3" data-name="Gestión Híbrida" data-price="1200">Contratar</button>
                         </div>
                     </article>
                 </div>
@@ -151,6 +151,24 @@
                 </form>
             </div>
         </section>
+
+        <section id="carrito-seccion" class="section bg-alt">
+        <div class="container">
+        <div class="section-header">
+            <h2>Tu Carrito de Servicios</h2>
+            <p>Revisa tus adquisiciones antes de procesar el contacto</p>
+        </div>
+        <div style="max-width: 600px; margin: 0 auto; background: var(--dark); padding: 30px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05);">
+            <ul id="lista-carrito" style="list-style: none; margin-bottom: 20px;">
+                <p style="color: var(--text-muted); text-align: center;">El carrito está vacío.</p>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                <h3>Total: <span id="total-carrito">$0</span></h3>
+                <button id="btn-vaciar" class="btn-card" style="background: transparent; color: #f43f5e; border-color: #f43f5e; display: none;">Vaciar Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -166,6 +184,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 
